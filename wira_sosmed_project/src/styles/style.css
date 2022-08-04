@@ -1,0 +1,292 @@
+.bg-img {
+ background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/imgs/bgidx2.jpg");
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center; 
+}
+
+.linkModal:hover {
+    color: #07b7e3;
+}
+.scrollBox {
+ overflow: hidden; 
+ overflow: scroll;
+ /* kegunaan overflow hidden untuk tulisan atau memotong gambar berlebih
+ dari sebuah div yang sudah diatur dengan widht dan heighnya jika tidak di hidden maka
+ tulisan atau gambar akan melewati dari div tersebut */
+ /* kegunaan overflow scrol untuk membuat scrol pada div yang sudah ditentukan dan memberikan scrol jika
+ konten kita berlebihan dari sebuah ukuran div */
+}
+
+/* -----------------input form for Email----------------- */
+.labelEmail {
+    position: absolute;
+	top: 8px;
+	left: 10px;
+	color: rgb(109, 109, 109);
+	text-transform: capitalize;
+	transition: top .3s;
+	padding: 0;
+}
+
+.inputEmail:focus + .labelEmail,
+.inputEmail:valid + .labelEmail
+{
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 100;
+    font-size: small;
+}
+
+/* -----------------input form for Pass----------------- */
+.labelPass {
+    position: absolute;
+	top: 8px;
+	left: 10px;
+	color: rgb(109, 109, 109);
+	text-transform: capitalize;
+	transition: top .3s;
+	padding: 0;
+}
+
+.inputPass:focus + .labelPass,
+.inputPass:valid + .labelPass
+{
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 100;
+    font-size: small;
+}
+
+/* -----------------input form for 2 Pass----------------- */
+.labelRePass {
+    position: absolute;
+	top: 8px;
+	left: 10px;
+	color: rgb(109, 109, 109);
+	text-transform: capitalize;
+	transition: top .3s;
+	padding: 0;
+}
+
+.inputRePass:focus + .labelRePass,
+.inputRePass:valid + .labelRePass
+{
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 100;
+    font-size: small;
+}
+
+/* -----------------input form for Username----------------- */
+.labelUsername {
+    position: absolute;
+	top: 8px;
+	left: 10px;
+	color: rgb(109, 109, 109);
+	text-transform: capitalize;
+	transition: top .3s;
+	padding: 0;
+}
+
+.inputUsername:focus + .labelUsername,
+.inputUsername:valid + .labelUsername
+{
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 100;
+    font-size: small;
+}
+
+/* -----------------input form for Fullname----------------- */
+.labelFullname {
+    position: absolute;
+	top: 8px;
+	left: 10px;
+	color: rgb(109, 109, 109);
+	text-transform: capitalize;
+	transition: top .3s;
+	padding: 0;
+}
+
+.inputFullname:focus + .labelFullname,
+.inputFullname:valid + .labelFullname
+{
+    top: -10px;
+    background-color: #ffffff;
+    z-index: 100;
+    font-size: small;
+}
+
+.divine {
+    padding: 18px 40px 0px;
+    display: flex;
+}
+
+.divine div:nth-child(2) {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    color: #8e8e8e;
+}
+
+.divine div:nth-child(1),
+.divine div:nth-child(3) {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    top: 0.45em;
+}
+
+.topnavbar {
+    position: sticky;
+    z-index: 9;
+    top: 0;
+}
+
+#homeOnlineUser {
+    position: sticky;
+
+    top: 85px;
+}
+
+/* responsive login */
+@media only screen and (max-width: 800px) {
+    .social-img {
+        display: none;
+    }
+}
+
+/* responsive home */
+@media only screen and (max-width: 895px) {
+    #homeOnlineUser{
+        display: none;
+    }
+}
+
+/* responsive navbar logo */
+@media only screen and (max-width: 595px) {
+    .navbar-logo{
+        display: none;
+    }
+}
+
+
+/* Content user */
+.contentuser
+    {
+        width: 300px;
+        height: 300px;
+        margin: 3px 3px;
+    }
+
+.contentuser .contentlikecoment {
+    width: 300px;
+    z-index: 1s;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+    transform: translateY(-125px);
+    opacity: 0;
+}
+
+.contentuser:hover .contentlikecoment{
+    opacity: 1;
+    transform: translateY(-155px);
+}
+
+.content-img {
+    transition: transform .75s;
+}
+
+.contentuser:hover .content-img {
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+
+.contentuser:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1028px) {
+    .contentuser{
+        width: 250px;
+        height: 250px;
+        margin: 3px 3px;
+    }
+    .contentuser .contentlikecoment {
+    width: 250px;
+    z-index: 1s;
+    position: absolute;
+    justify-content: center;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+    transform: translateY(-120px);
+    opacity: 0;
+    }
+
+    .contentuser:hover .contentlikecoment{
+    opacity: 1;
+    transform: translateY(-140px);
+    }
+}
+
+@media only screen and (max-width: 861px) {
+    .contentuser{
+        width: 200px;
+        height: 200px;
+        margin: 3px 3px;
+    }
+    .contentuser .contentlikecoment {
+    width: 200px;
+    z-index: 1s;
+    position: absolute;
+    justify-content: center;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+    transform: translateY(-80px);
+    opacity: 0;
+    }
+
+    .contentuser:hover .contentlikecoment{
+    opacity: 1;
+    transform: translateY(-110px);
+    }
+}
+
+@media only screen and (max-width: 713px) {
+    .contentuser{
+        width: 140px;
+        height: 140px;
+        margin: 5px 5px;
+    }
+
+    .contentuser .contentlikecoment {
+    width: 140px;
+    max-width: 140px;
+    z-index: 1s;
+    position: absolute;
+    justify-content: center;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+    transform: translateY(-60px);
+    opacity: 0;
+    }
+
+    .contentuser:hover .contentlikecoment{
+    opacity: 1;
+    transform: translateY(-85px);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .contentuser{
+        margin: 0px 0px;
+    }
+}
