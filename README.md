@@ -1,5 +1,7 @@
 # Project_Mandiri_ChickStory_JCWD2102_FE
 Project Mandiri Sosial Media - Purwadhika - JCWD Batch 2102
+Social Media like Instagram Clone 
+Front End using Next JS.
 
 1. Login Form
 ![](1.PNG)
